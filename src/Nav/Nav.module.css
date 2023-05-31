@@ -8,6 +8,10 @@
     z-index: 100000;*/
 }
 
+.appBar{
+    display: none;
+}
+
 .navList{
     list-style: none;
     display: flex;
@@ -50,41 +54,25 @@
 
 }
 
-.logo{
-    width: 100px;
-    height: 40px;
-    background-color: #FCBF49;
-    margin: 5px;
 
+.logo{
+    width: 70px;
+    height: 70px;
+    background-image: url("../assets/logo.png");
+    margin: 5px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
 }
 
 @media only screen and (max-width: 630px) {
-    .navItem{
-        margin: 15px 10px 5px 0;
-        font-weight: 700;
-        padding-right: 15px;
-        font-size: 15px;
-    }
 
-    .logo{
+    .navContainer{
         display: none;
     }
 
-    .profile{
-        height:30px;
-        width: 30px;
-        border-radius: 100%;
-        background-color: #FCBF49;
-        margin: 10px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .navItem{
-        margin: 15px 10px 5px 0;
-        font-weight: 700;
-        padding-right: 15px;
-        font-size: 12px;
+    .appBar{
+        display: block;
     }
 }

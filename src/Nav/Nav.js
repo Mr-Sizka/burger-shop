@@ -5,9 +5,26 @@ import Home from "../Home/Home";
 import Shop from "../Shop/Shop";
 import Promo from "../Promo/Promo";
 import About from "../About/About";
+import {AppBar, Toolbar} from "@mui/material";
+import {Button, IconButton, makeStyles, Typography} from "@material-ui/core";
+import {ExpandMore} from "@mui/icons-material";
 
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        flexGrow: 1,
+    },
+    menuButton: {
+        marginRight: theme.spacing(2),
+    },
+    title: {
+        flexGrow: 1,
+    },
+}));
 
 export default function Nav() {
+
+    const styles = useStyles();
     return (
         <>
             <BrowserRouter>
@@ -25,6 +42,19 @@ export default function Nav() {
                     <div className={classes.profile}></div>
                 </div>
             </div>
+                <div className={classes.appBar}>
+                    <AppBar position="static" style={{'background-color':'#EAE2B7'}}>
+                        <Toolbar>
+                            <IconButton edge="start" className={styles.menuButton} color="inherit" aria-label="menu">
+                                <ExpandMore />
+                            </IconButton>
+                            <Typography variant="h6" className={styles.title}>
+                                Home
+                            </Typography>
+                            <div className={classes.logo}></div>
+                        </Toolbar>
+                    </AppBar>
+                </div>
                 <Routes>
                     <Route path={"/"} element={<Home/>}/>
                     <Route path={"/shop"} element={<Shop/>}/>
