@@ -6,7 +6,7 @@ import Shop from "../Shop/Shop";
 import Promo from "../Promo/Promo";
 import About from "../About/About";
 import {AppBar, Toolbar} from "@mui/material";
-import {Button, IconButton, makeStyles, Typography} from "@material-ui/core";
+import { IconButton, makeStyles, Typography} from "@material-ui/core";
 import {ExpandMore} from "@mui/icons-material";
 
 

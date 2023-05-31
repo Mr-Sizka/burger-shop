@@ -1,11 +1,14 @@
 
 .slider{
+    width: 98.75vw;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home_carousel{
     width: 100%;
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../assets/1.jpg");
+    height: 100%;
 }
 
 .category_tile{
@@ -40,15 +43,29 @@
 .hot_outer{
     display: flex;
     width: 100%;
-    height: 600px;
+    height: 800px;
     align-items: center;
     justify-content: center;
 }
 
 .hot_inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 80%;
-    height: 80%;
-    background-color: #D62828;
+    height: auto;
+    background-color: #EAE2B7;
+}
+.slide{
+    display: flex;
+}
+
+
+
+.carousel{
+    width: 80%;
+    margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 960px) {
