@@ -2,6 +2,10 @@ import React from 'react'
 import {Box, Button, TextField, Typography} from "@material-ui/core";
 import classes from "./LogIn.module.css";
 export default function LogIn() {
+
+    const handleClick = () =>{
+        window.location.pathname = '/home'
+    }
     return (
         <div className={classes.login_outer}>
             <Box className={classes.login_inner}>
@@ -27,7 +31,7 @@ export default function LogIn() {
 
                     variant={"contained"}
                     color={"primary"}
-
+                    onClick={handleClick}
                 >LogIn</Button>
 
                 <h3>Don't Have An Account ?</h3>
