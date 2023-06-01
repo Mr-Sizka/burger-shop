@@ -46,6 +46,7 @@
     height: 800px;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .hot_inner{
@@ -61,7 +62,52 @@
     display: flex;
 }
 
+.carousel_slide{
+    width: 100%;
+    height:600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.carousel_slide>div{
+    position: relative;
+    top: 50%;
+    left: 55%;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.35);
+    color: black;
+    font-weight: 600;
+    width: 500px;
+    height: auto;
+    font-size: 20px;
+    padding: 20px;
+}
 
+.carousel_slide>div>Button{
+    background-color: #f77f00;
+    box-shadow: 2px 2px 4px 4px #FCBF49;
+    font-weight: 600;
+    font-size: 20px;
+    animation: button_animation 5000ms infinite;
+}
+.carousel_slide>div>Button:hover{
+    color: #f77f00;
+    box-shadow: 2px 2px 4px 4px #f77f00;
+    background-color: white;
+}
+
+@keyframes button_animation{
+    0%{
+        transform: translateX(50px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(50px);
+    }
+}
 
 .carousel{
     width: 80%;

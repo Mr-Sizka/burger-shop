@@ -35,6 +35,8 @@
 
 .food_tile:hover>div{
     color: #FCBF49;
+    transform: translateY(-10px);
+    transition: 1000ms ease;
 }
 
 .tile_text{
@@ -128,6 +130,7 @@
     background: none;
     font-weight: 600;
     box-shadow: 1px 1px 4px 1px #f77f00;
+    transition: 500ms ease-out;
 }
 
 .price_container>Button:hover{
