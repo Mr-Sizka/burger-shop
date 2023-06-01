@@ -13,6 +13,14 @@ import MobileNav from "./mobile/MobileNav";
 
 export default function Nav() {
 
+    const handleClick = (id) =>{
+        const ele = document.getElementsByClassName(classes.navLinkActive)
+        for (let Element of ele) {
+            Element.className=classes.navLink
+        }
+        document.getElementById(id).className=classes.navLinkActive
+
+    }
     return (
         <>
             <div className={classes.navContainer}>
@@ -20,10 +28,10 @@ export default function Nav() {
                 <div className={classes.right}>
                     <nav>
                         <ul className={classes.navList}>
-                            <li className={classes.navItem} ><Link to={"/home"} className={classes.navLink}>HOME</Link></li>
-                            <li className={classes.navItem} ><Link to={"/shop"} className={classes.navLink}>SHOP</Link></li>
-                            <li className={classes.navItem} ><Link to={"/promo"} className={classes.navLink}>PROMO</Link></li>
-                            <li className={classes.navItem} ><Link to={"/about"} className={classes.navLink}>ABOUT</Link></li>
+                            <li className={classes.navItem} ><Link to={"/home"} className={classes.navLink} onClick={()=>handleClick('home')} id={'home'}>HOME</Link></li>
+                            <li className={classes.navItem} ><Link to={"/shop"} className={classes.navLink} onClick={()=>handleClick('shop')} id={'shop'}>SHOP</Link></li>
+                            <li className={classes.navItem} ><Link to={"/promo"} className={classes.navLink} onClick={()=>handleClick('promo')} id={'promo'}>PROMO</Link></li>
+                            <li className={classes.navItem} ><Link to={"/about"} className={classes.navLink} onClick={()=>handleClick('about')} id={'about'}>ABOUT</Link></li>
                         </ul>
                     </nav>
                     <div className={classes.profile}></div>

@@ -1,0 +1,19 @@
+.promo_outer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAE2B7;
+}
+.container{
+    padding-top: 20px;
+}
+
+.promo_outer>h1{
+    font-family: popins;
+    font-size: 40px;
+}
+
+.promo_card{
+    margin-bottom: 50px;
+}

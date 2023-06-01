@@ -8,6 +8,8 @@
     z-index: 100000;*/
 }
 
+
+
 .appBar{
     display: none;
 }
@@ -37,6 +39,10 @@
 .navLink{
     color: #282c34;
     text-decoration: none;
+}
+.navLinkActive{
+    color: #f77f00;
+    text-decoration: underline;
 }
 
 .navLink:hover{
