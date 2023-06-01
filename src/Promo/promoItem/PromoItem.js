@@ -4,7 +4,7 @@ import classes from '../promo.module.css'
 import {CardActions, CardContent} from "@mui/material";
 import { Shop2} from "@mui/icons-material";
 
-const useStyles = makeStyles(theme=>({
+const useStyles = makeStyles(({
     root:{
         backgroundColor:'#FCBF49',
         "&:hover":{

@@ -33,8 +33,9 @@ export default function LogIn() {
                     color={"primary"}
                     onClick={handleClick}
                 >LogIn</Button>
+
                 <h3>Don't Have An Account ?</h3>
-                <Button>Register Here</Button>
+                <a>Register Here</a>
             </Box>
         </div>
     )

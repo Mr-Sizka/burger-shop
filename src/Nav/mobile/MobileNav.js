@@ -80,7 +80,7 @@ export default function MobileNav() {
                     </DrawerHeader>
                     <Divider />
                     <List>
-                        {['Home', 'Shop', 'Promo', 'About'].map((text, index) => (
+                        {['Home', 'Shop', 'Promo', 'About'].map((text) => (
                             <ListItem key={text} disablePadding>
                                 <ListItemButton onClick={handleDrawerClose}><Link to={'/'+text} className={classes.menu_text} >
                                     <ListItemText primary={text} className={classes.menu_text}/></Link>
