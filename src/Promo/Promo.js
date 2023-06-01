@@ -1,7 +1,6 @@
 import React from 'react'
 import {Container, Grid} from "@material-ui/core";
 import classes from './promo.module.css'
-import FoodItem from "../Shop/content/food_item/FoodItem";
 import PromoItem from "./promoItem/PromoItem";
 
 export default function Promo() {

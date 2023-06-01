@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button, Card, CardHeader, CardMedia, Container, makeStyles, Typography} from "@material-ui/core";
+import {Button, Card, CardMedia, Container, makeStyles, Typography} from "@material-ui/core";
 import classes from '../promo.module.css'
 import {CardActions, CardContent} from "@mui/material";
 import { Shop2} from "@mui/icons-material";
